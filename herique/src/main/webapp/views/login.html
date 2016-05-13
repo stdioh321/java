@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3" >
+        <form method="POST" ng-submit="postLogin(cred)"> 
+            <fieldset>
+                <legend>Form Login</legend>
+                <table class="table">
+                    <tr>
+                        <td>User</td>
+                        <td>
+                            <input type="text" name="username" placeholder="Username" class="form-control" ng-model="cred.username"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="text" name="password" placeholder="Password" class="form-control"  ng-model="cred.password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-primary btn-block" type="submit"> Enviar</button>
+                            {{cred}}
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</div>

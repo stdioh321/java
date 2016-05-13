@@ -3,6 +3,10 @@
   <persistence-unit name="pu" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>herique.entity.Testes</class>
+    <class>herique.entity.Role</class>
+    <class>herique.entity.User</class>
+    <class>herique.entity.UserRole</class>
+    <class>herique.entity.Expression</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db?serverTimezone=America/New_York"/>
